@@ -55,7 +55,7 @@ def goldenCookieClick():
     while True:
         try:  
             
-            location = pyautogui.locateCenterOnScreen(imagePath, confidence=0.5)  # adjust confidence
+            location = pyautogui.locateCenterOnScreen(imagePath, region=(1, 142, 1234, 1265), confidence=0.6)  # adjust confidence
             if location:
                 goldenCookiesClicked+=1
                 print(goldenCookiesClicked)
